@@ -1,0 +1,16 @@
+<h1> Crappy Calculator</h1>
+
+
+
+
+<% if @result %>
+  <div id="results"><p><%= params[:x] %><%= params[:operator]%> <%= params[:y] %>  =   <%= @result%></p></div>
+<% end %>
+  <form action="/calc">
+    <input type="number" name="x" placeholder="x Value">
+    <input type="text" name="operator" placeholder="operator (+ - * /)">
+    <input type="number" name="y" placeholder="y Value">
+  <button>Calculate!</button>
+  </form>
+  
+</div>

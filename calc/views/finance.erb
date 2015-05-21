@@ -1,0 +1,19 @@
+<div id="finance">
+  <h3><%= @name%></h3>
+  <div id="results">Last traded: <%= @result%><br>Volume Traded: <%= @volume%>
+  </div>
+
+  <form action="/finance">
+    <input type="text" name="tick" placeholder="ticker" autofocus>
+
+  <button>Stock</button>
+  </form>
+
+  <div id="graph">
+    <img src="http://chart.finance.yahoo.com/z?s=<%=@tick%>&t=6m&q=l&l=on&z=s&p=m50,m200"/>
+  </div>
+  
+</div>
+<div id="interact"><div id="info"></div>
+<button id="buy">BUY</button>
+<button id="sell">SELL</button></div>

@@ -1,0 +1,14 @@
+<div id="movies">
+
+  <form>
+    <input type="text" name="mTitle" placeholder="movie name">
+    <button>Submit</button>
+  </form>
+
+
+<% @movie_array.each do |m| %>
+<a href="movie?mTitle=<%= m['Title']%>"><%= m['Title'] %></a><br>
+    <% end %>
+
+
+</div>
